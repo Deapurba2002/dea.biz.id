@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Baju</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Icon -->
+    <link rel="icon" href="icon.png">
+
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .product img {
+            max-width: 100px;
+            margin-right: 15px;
+        }
+
+        .product .details {
+            flex: 1;
+        }
+
+        .product button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .product button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Toko Baju</h1>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="baju1.jpg" alt="Baju 1">
+            <div class="details">
+                <h3>Baju Santai</h3>
+                <p>Harga: Rp 100.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju2.jpg" alt="Baju 2">
+            <div class="details">
+                <h3>Baju Formal</h3>
+                <p>Harga: Rp 200.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju3.jpg" alt="Baju 3">
+            <div class="details">
+                <h3>Baju Olahraga</h3>
+                <p>Harga: Rp 150.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju4.jpg" alt="Baju 4">
+            <div class="details">
+                <h3>Baju Tidur</h3>
+                <p>Harga: Rp 120.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju5.jpg" alt="Baju 5">
+            <div class="details">
+                <h3>Baju Kasual</h3>
+                <p>Harga: Rp 130.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju6.jpg" alt="Baju 6">
+            <div class="details">
+                <h3>Baju Musim Panas</h3>
+                <p>Harga: Rp 140.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <!-- Tambahan banyak baju -->
+        <div class="product">
+            <img src="baju7.jpg" alt="Baju 7">
+            <div class="details">
+                <h3>Baju Hangat</h3>
+                <p>Harga: Rp 180.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju8.jpg" alt="Baju 8">
+            <div class="details">
+                <h3>Baju Pantai</h3>
+                <p>Harga: Rp 160.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju9.jpg" alt="Baju 9">
+            <div class="details">
+                <h3>Baju Batik</h3>
+                <p>Harga: Rp 250.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju10.jpg" alt="Baju 10">
+            <div class="details">
+                <h3>Baju Denim</h3>
+                <p>Harga: Rp 220.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju11.jpg" alt="Baju 11">
+            <div class="details">
+                <h3>Baju Pesta</h3>
+                <p>Harga: Rp 300.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="baju12.jpg" alt="Baju 12">
+            <div class="details">
+                <h3>Baju Kerja</h3>
+                <p>Harga: Rp 240.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // PWA Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(reg => console.log('Service Worker registered:', reg))
+                .catch(err => console.error('Service Worker registration failed:', err));
+        }
+    </script>
+</body>
+</html>
