@@ -1,0 +1,13 @@
+<html>
+<header>
+  <title> pertemuan 2 HTML dasar</title>
+</head>
+  <body>
+<header><a href="ipwija.ac.id"> Home </a></header>
+<main> hi
+<br/>
+</main>
+<section>Halo Word</section>
+<footer>@2025</footer>
+  </body>
+</html>
