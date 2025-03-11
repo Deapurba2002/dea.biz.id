@@ -1,13 +1,47 @@
 <html>
-<header>
-  <title> pertemuan 2 HTML dasar</title>
+<head>
+  <title> Pertemuan 2 HTML dasar</title>
 </head>
   <body>
 <header><a href="ipwija.ac.id"> Home </a></header>
-<main> hi
-<br/>
-</main>
+<main> hi 
+<br/> 
+</main id="main" class="main">    
 <section>Halo Word</section>
-<footer>@2025</footer>
-  </body>
+
+    <section id="gambar">
+    <img src="edu.png" height="200" width="200">  
+    </section>
+
+    <section id="paragraf">
+<p>
+<h1> Pertemuan 2</h1>  
+<h2> HTML dasar </h2>
+pertemuan 2, dasar HTML membuat paragraf <br/> sederhana dengan huruf <i>miring </i>,<b>Tebal</b>
+</p>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  <ol>
+    <li>satu</li>
+    <li>dua</li>
+  </ol>
+</section>
+<section id="table">
+<h2>table</h2>
+<table border="1">
+<thead>
+  <tr><th>jan </th><th>feb </th></tr>
+</thead>  
+<tbody>
+<tr><td>1 </td><td>2 </td></tr>
+<tr><td>3 </td><td>4 </td></tr>
+</tbody>
+</table>
+</section>
+
+        
+<footer>@2025</footer>    
+  </body>
 </html>
